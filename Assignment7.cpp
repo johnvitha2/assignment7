@@ -82,12 +82,12 @@ int main() {
         {8,"SELECT s.StdNo,s.StdFirstName,s.StdLastName,COUNT(e.OfferNo) FROM Student7 s LEFT JOIN Enrollment7 e ON s.StdNo=e.StdNo GROUP BY s.StdNo"},
         {9,"SELECT FacFirstName,FacLastName,FacSalary FROM Faculty7 ORDER BY FacSalary DESC LIMIT 3"},
         {10,"SELECT * FROM Student7 WHERE StdNo NOT IN (SELECT StdNo FROM Enrollment7)"},
-        {{11,"INSERT INTO Student7 VALUES('888-88-8888','ALICE','SMITH','TOPEKA','KS','66610','CS','JR',3.85')"},
+        {11,"INSERT INTO Student7 VALUES('888-88-8888','ALICE','SMITH','TOPEKA','KS','66610','CS','JR',3.85)"},
         {11,"SELECT * FROM Student7"},
         {12,"UPDATE Student7 SET StdCity='OVERLAND PARK',StdZip='66202' WHERE StdFirstName='BOB' AND StdLastName='NORBERT'"},
         {12,"SELECT * FROM Student7"}
     };
-
+    
     for (auto& x : q) {
         cout << x.first << ". " << x.second << endl;
         bool hasResult = stmt->execute(x.second);
@@ -103,4 +103,5 @@ int main() {
     delete c;
     return 0;
 }
+
 
