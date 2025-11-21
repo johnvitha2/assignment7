@@ -45,6 +45,8 @@ int main() {
         "PRIMARY KEY (CourseNo)"
         ")",
         "INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('FIN300','FUNDAMENTALS OF FINANCE',4)",
+        "INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('FIN450','PRINCIPLES OF INVESTMENTS',4)",
+        "INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('FIN480','CORPORATE FINANCE',4)",
         "INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('IS320','FUNDAMENTALS OF BUSINESS PROGRAMMING',4)",
         "INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('IS460','SYSTEMS ANALYSIS',4)",
         "INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('IS470','BUSINESS DATA COMMUNICATIONS',4)",
@@ -177,6 +179,7 @@ int main() {
     delete c;
     return 0;
 }
+
 
 
 
