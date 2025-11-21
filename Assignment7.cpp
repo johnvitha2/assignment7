@@ -31,7 +31,7 @@ void printResult(sql::ResultSet* r) {
 
 int main() {
     sql::mysql::MySQL_Driver* d = sql::mysql::get_mysql_driver_instance();
-    sql::Connection* c = d->connect("tcp://mysql.eecs.ku.edu:3306", "348f25_j243v784", "YOUR_PASSWORD");
+    sql::Connection* c = d->connect("tcp://mysql.eecs.ku.edu:3306", "348f25_j243v784", "Thei4uj9");
     c->setSchema("348f25_j243v784");
 
     sql::Statement* stmt = c->createStatement();
@@ -177,6 +177,7 @@ int main() {
     delete c;
     return 0;
 }
+
 
 
 
