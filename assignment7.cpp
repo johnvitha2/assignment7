@@ -66,6 +66,24 @@ int main() {
 
 
 
+/*
+stmt->execute(
+    "CREATE TABLE IF NOT EXISTS Course7 ("
+    "CourseNo VARCHAR(10),"
+    "CrsDesc VARCHAR(50),"
+    "CrsUnits INTEGER,"
+    "PRIMARY KEY (CourseNo)"
+    ");"
+);
+
+stmt->execute("INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('FIN300','FUNDAMENTALS OF FINANCE',4);");
+stmt->execute("INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('FIN450','PRINCIPLES OF INVESTMENTS',4);");
+stmt->execute("INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('FIN480','CORPORATE FINANCE',4);");
+stmt->execute("INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('IS320','FUNDAMENTALS OF BUSINESS PROGRAMMING',4);");
+stmt->execute("INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('IS460','SYSTEMS ANALYSIS',4);");
+stmt->execute("INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('IS470','BUSINESS DATA COMMUNICATIONS',4);");
+stmt->execute("INSERT INTO Course7 (CourseNo, CrsDesc, CrsUnits) VALUES ('IS480','FUNDAMENTALS OF DATABASE MANAGEMENT',4);");
+*/
 
 
 
